@@ -1,0 +1,14 @@
+
+await page.waitForSelector('article > div > div');
+
+        let type = await page.evaluate(() => {
+
+            let x = document.querySelectorAll('article > div > div')[0].innerText; //for photos and private account
+
+            return x;
+
+        });
+
+
+---------------------------------------------------------------------------------------------
+
